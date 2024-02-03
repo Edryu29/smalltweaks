@@ -1,0 +1,12 @@
+{
+	"required": true,
+	"package": "net.edryu.smalltweaks.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
+		"VillagerBreedTaskMixin",
+		"PassiveEntityMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
