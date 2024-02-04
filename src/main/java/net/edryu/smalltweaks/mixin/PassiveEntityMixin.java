@@ -15,7 +15,7 @@ public abstract class PassiveEntityMixin{
 		constant = @Constant(intValue = -24000)
 	)
 	private int setAgeWild(int value) {
-		return -1 * SmallTweaksMain.CONFIG.AnimalWildGrowUp;
+		return -1 * SmallTweaksMain.CONFIG.AnimalSpawnedGrowUpTime;
 	}
 
 	@ModifyConstant(
@@ -23,7 +23,7 @@ public abstract class PassiveEntityMixin{
 		constant = @Constant(intValue = -24000)
 	)
 	private int setAgeBreed(int value) {
-		return -1 * SmallTweaksMain.CONFIG.AnimalBreedGrowUp;
+		return -1 * SmallTweaksMain.CONFIG.AnimalBredGrowUpTime;
 	}
 
 }

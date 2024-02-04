@@ -14,7 +14,7 @@ public abstract class VillagerBreedTaskMixin{
 		method = "createChild(Lnet/minecraft/server/world/ServerWorld;Lnet/minecraft/entity/passive/VillagerEntity;Lnet/minecraft/entity/passive/VillagerEntity;)Ljava/util/Optional;", 
 		constant = @Constant(intValue = -24000))
 	private int injected(int value) {
-		return -1 * SmallTweaksMain.CONFIG.VillagerGrowUp;
+		return -1 * SmallTweaksMain.CONFIG.VillagerGrowUpTime;
 	}
 	
 }

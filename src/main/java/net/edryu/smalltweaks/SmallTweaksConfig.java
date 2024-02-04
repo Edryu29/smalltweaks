@@ -5,11 +5,12 @@ import me.shedaniel.autoconfig.annotation.Config;
 import me.shedaniel.cloth.clothconfig.shadowed.blue.endless.jankson.Comment;
 
 @Config(name = "smalltweaks")
+@Config.Gui.Background("minecraft:textures/block/stone.png")
 public class SmallTweaksConfig implements ConfigData {
-    @Comment("Villager Grow Up time. Default = 72000 (120 minutes)")
-    public int VillagerGrowUp = 96000;
-    @Comment("Passive breeded Animals Grow Up time. Default = 72000 (60 minutes)")
-    public int AnimalBreedGrowUp = 72000;
-    @Comment("Passive wild Animals Grow Up time. Default = 72000 (40 minutes)")
-    public int AnimalWildGrowUp = 48000;
+    @Comment("Default: 96000 - Vanilla: 24000")
+    public int VillagerGrowUpTime = 96000;
+    @Comment("Default: 60000 - Vanilla: 24000")
+    public int AnimalBredGrowUpTime = 60000;
+    @Comment("Default: 36000 - Vanilla: 24000")
+    public int AnimalSpawnedGrowUpTime = 36000;
 }
